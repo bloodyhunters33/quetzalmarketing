@@ -3,15 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body {
     background-color: #eaf4ea;
     color: #333;
 }
-
-/* Hero Section */
 .hero {
     position: relative;
     text-align: center;
@@ -235,7 +233,6 @@ footer p {
     font-size: 12px;
     text-align: center;
 }
-
 #contacto {
     text-align: center;
     background-color: #76b041;
@@ -258,24 +255,47 @@ footer p {
 #contacto a:hover {
     color: white;
 }
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff; /* Blanco */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
 
-/* Responsive Design (Media Queries) */
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #641403; /* Amarillo */
+    outline: none;
+}
+
+form button {
+    background-color: #034306; 
+    color: white;
+    border-radius: 8px;
+    padding: 15px 30px;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #76b041; 
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
-    /* Ajustar las imágenes de la hero */
-    .hero h1 {
-        font-size: 2em;
-        padding: 30px;
-        width: 90%;
-    }
-
-    /* Cambiar el menú de navegación a vertical */
-    nav ul {
+    .header-container {
         flex-direction: column;
         align-items: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
     }
 
     .mission-vision {
@@ -284,50 +304,26 @@ footer p {
 
     .mission, .vision {
         width: 100%;
-        margin-bottom: 20px;
     }
 
-    /* Ajustar las tarjetas de servicio */
     .service-card {
-        width: 100%;
-        margin-bottom: 20px;
+        width: calc(50% - 20px);
     }
 
-    
-    /* Ajustar el footer */
-    footer {
-        padding: 10px;
-        font-size: 12px;
-    }
-
-    footer .social-icons {
-        flex-direction: column;
-        margin-bottom: 15px;
+    .image-container img {
+        width: 50%;
     }
 }
 
 @media (max-width: 480px) {
-    /* Para pantallas muy pequeñas, ajustar aún más los elementos */
-    .hero h1 {
-        font-size: 1.5em;
+    .service-card {
+        width: 100%;
     }
 
-    .header-container h1 {
-        font-size: 18px;
+    footer {
+        font-size: 12px;
     }
-
-    nav ul li a {
-        font-size: 14px;
-    }
-
-    .about-us p, .contact p {
-        font-size: 14px;
-    }
-
-    .social-icons img {
-        width: 20px;
-        height: 20px;
-    }
+}
 
     .service-card {
         padding: 15px;
