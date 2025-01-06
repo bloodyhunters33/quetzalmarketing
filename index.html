@@ -3,62 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quetzal Marketing & Publicidad</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>Fraternidad Cristiana Betel</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="uikit/css/uikit-rtl.css" />
+    <link rel="stylesheet" href="uikit/css/uikit-rtl.min.css" />
+    <link rel="stylesheet" href="uikit/css/uikit.css" />
+    <link rel="stylesheet" href="uikit/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="uikit/js/uikit-icons.js"></script>
+    <script src="uikit/js/uikit-icons.min.js"></script>
+    <script src="uikit/js/uikit.js"></script>
+    <script src="uikit/js/uikit.min.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="top-banner">10% de descuento en el mes de Diciembre</div>
-        <div class="header-container">
-            <img src="media/logo.png" alt="Quetzal Logo" class="logo">
-            <h1>QUETZAL Marketing & Publicidad</h1>
-        </div>    
         <nav>
             <ul>
+                <img src="media/logo.png" alt="Iglesia" class="hero-image">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="servicios.html" class="active">Servicios</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="radio.html">Radio</a></li>
                 <li><a href="contactanos.html">Contáctanos</a></li>
-                <li><a href="acerca.html">Acerca de Nosotros</a></li>
             </ul>
         </nav>
     </header>
-
+    <!-- Sección 1: Foto inicial con frase -->
     <section class="hero">
         <div class="hero-text">
-            <h1>TRANSFORMAMOS IDEAS EN IMPACTO VISUAL</h1>
+            <h1>Esta es mi casa hasta que Cristo venga</h1>
+        </div>
+        
+    </section>
+
+
+    <!-- Sección 2: Acerca de -->
+    <section id="acerca">
+        <h2>Fraternidad Cristiana Betel</h2>
+        <div class="uk-grid-medium uk-flex-middle" uk-grid>
+            <div class="uk-width-auto">
+                <img class="uk-comment-avatar" src="images/avatar.jpg" width="80" height="80" alt="">
+            </div>
+            <div class="uk-width-expand">
+                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Author</a></h4>
+                <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                    <li><a href="#">12 days ago</a></li>
+                    <li><a href="#">Reply</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, repudiandae. Dolor porro temporibus tempore saepe delectus error eaque dolores reiciendis soluta sunt accusantium, quia iste deserunt similique, fuga provident magni!</p>
+    </section>
+
+    <!-- Sección 3: Información de Pastores -->
+    <section id="pastores">
+        <h2>Pastores</h2>
+        <div class="pastores-list">
+            <div class="pastor">
+                <h3>Nombre del Pastor</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam dolor veniam, harum omnis fugit optio eius voluptatibus id facere quia amet ab delectus laudantium earum cupiditate architecto labore, nisi nulla.</p>
+                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            </div>
         </div>
     </section>
 
-    <main>
-        <section class="about-us">
-            <h2>¿Quiénes Somos?</h2>
-            <p>
-                En Quetzal Marketing y Publicidad, nos diferenciamos por ofrecer soluciones personalizadas y creativas que combinan estrategia y diseño para generar un impacto real en nuestros clientes. Nos enfocamos en destacar la identidad única de cada negocio, asegurando que nuestro trabajo no solo aumente su visibilidad, sino que también cree una conexión genuina con su audiencia.
-            </p>
-            <div class="mission-vision">
-                <div class="mission">
-                    <h3>MISIÓN</h3>
-                    <p>Ayudar a las marcas a destacarse visualmente, ofreciendo servicios de diseño innovadores que impulsen su identidad y sus objetivos de negocio.</p>
-                </div>
-                <div class="vision">
-                    <h3>VISIÓN</h3>
-                    <p>Ser reconocidos como una agencia de referencia en el ámbito del diseño creativo, ofreciendo soluciones personalizadas y funcionales para clientes locales e internacionales.</p>
-                </div>
-            </div>
-            <div class="image-container">
-                <img src="media/team.jpg" alt="Equipo de trabajo">
-            </div>
-        </section>
-    </main>
+    <!-- Sección 4: Compromiso -->
+    <section id="compromiso">
+        <h2>Compromiso</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum voluptate laborum animi. In iste officia, deserunt aspernatur dicta eius rem, harum unde quaerat quasi nulla a temporibus cum vitae aut?</p>
+    </section>
 
-    <footer>
-        <div class="social-icons">
-            <a href="https://www.facebook.com/profile.php?id=61568398502842&mibextid=ZbWKwL"><img src="media/facebook.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/quetzal_myp/profilecard/?igsh=MWEzY21hc2thenhncA=="><img src="media/instagram.png" alt="Twitter"></a>
-            <a href="https://wa.me/+50558359036"><img src="media/whatsapp.png" alt="Instagram"></a>
+    <!-- Sección 5: Servicios -->
+    <section id="servicios">
+        <h2>Servicios</h2>
+    <div class="video-container">
+        <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" 
+        width="720" height="480" loop muted playsinline uk-video="autoplay: inview"></video>
+    </div> 
+    </section>
+
+    <!-- Sección 6: Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Teléfono: +50585372413</p>
+        <p>Email: fraternidadbethel@gmail.com</p>
+        <p>Redes Sociales: 
+            <a href="https://www.tiktok.com/@bethelmatagalpa?_t=ZM-8sqhxNsqjHK&_r=1" target="_blank">TikTok</a>, 
+            <a href="https://www.facebook.com/fraternidadCristianaBethelMatagalpa" target="_blank">Facebook</a>, 
+            <a href="https://www.instagram.com/fraternidadcristianabethel/" target="_blank">Instagram</a>
+        </p>
+        <p>Ubicación: Frente Aldeas S.O.S Camino al Hospital Regional, Matagalpa.</p>
+        <a href="https://wa.me/+50585372413">Contacto por WhatsApp</a>
+    </section>
+
+    <!-- Sección 8: Radio -->
+    <section id="radio">
+        <h2>Radio en Vivo</h2>
+        <div class="radio-info">
+            <p>Escucha nuestra radio en vivo.</p>
+            <audio controls>
+                <source src="radio-en-vivo.mp3" type="audio/mp3">
+                Tu navegador no soporta el audio.
+            </audio>
         </div>
-        <p>&copy; 2024 Quetzal Marketing & Publicidad. Todos los derechos reservados.</p>
-    </footer>
+    </section>
+
 </body>
 </html>
-
